@@ -1,0 +1,26 @@
+@media screen and (max-width: 1000px) {
+  .gameModal {
+    padding: 0px !important;
+    overflow-y: scroll !important;
+  }
+  .gameModal .hero .hero-body {
+    padding: 0px !important;
+  }
+}
+
+.gameModal {
+  position: fixed;
+  width: 100%;
+  min-height: 100% !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 10px;
+  background-image: url("../images/bananas.png");
+  background-repeat: repeat;
+  display: none;
+}
+
+.gameModal.is-active {
+  display: block !important;
+}

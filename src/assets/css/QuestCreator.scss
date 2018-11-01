@@ -1,0 +1,81 @@
+body{
+	background-color: rgba(51,51,51,0.07)
+}
+
+q {
+  quotes: "“" "”" "‘" "’" !important;
+}
+q:before {
+    content: open-quote !important;
+}
+q:after {
+    content: close-quote !important;
+}
+.QuestCreator{
+	.menu-lateral-mathquestionary-questcreator
+	{
+		height: 100vh;
+		.menu-list{
+			a{
+				color: #fff;
+				&:hover{
+					background-color: rgba(51,51,51,0.1) !important;
+				}
+				padding: 20px;
+			}
+		}
+	}
+	.page{
+		background-color: #fff !important;
+		width: 73% !important;
+		box-shadow: 3px 3px 9px rgba(51,51,51,0.3);
+		margin-top: 4vh;
+		height: 95vh;
+		overflow-y: auto;
+		border-radius: 10px;
+		padding: 0px 0px 10px 0px !important;
+		.create-quest-creator-scroller{
+			height: 80.1vh;
+			overflow-y: scroll;
+		}
+		.item-action-questcreator{
+			
+		}
+		.Questions-panel{
+			border-radius: 10px;
+			.panel-block.footer-panel{
+				border-bottom-right-radius: 10px;
+				border-bottom-left-radius: 10px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px)
+{
+	.QuestCreator{
+		.menu-lateral-mathquestionary-questcreator
+		{
+			height: auto !important;
+		}
+		.page{
+			width: 98% !important;
+			margin-right: 1% !important;
+		}
+	}
+}
+.media.possiblesanswers
+{
+	cursor: pointer;
+	border: 1px solid rgba(51,51,51,0.1);
+	box-shadow: 1px 1px 3px rgba(51,51,51,0.1);
+	margin-top: 5px;
+	padding: 15px;
+	border-radius: 10px;
+}
+.media.manager-questions-question
+{
+	border: 1px solid rgba(51,51,51,0.1);
+	box-shadow: 1px 1px 3px rgba(51,51,51,0.1);
+	padding: 15px;
+	border-radius: 10px;
+}
